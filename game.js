@@ -34,3 +34,14 @@ let questions = [
         answer: 4,
     },
 ];
+
+
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 3;
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuesions = [...questions];
+    getNewQuestion();
+};
